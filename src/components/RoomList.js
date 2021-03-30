@@ -5,7 +5,7 @@ class RoomList extends React.Component
     render(){
         return(
             <div className="room-list">
-                <div className="help-text">RoomListing test</div>
+                <div className="help-text">RoomList</div>
             </div>
         )
     }
