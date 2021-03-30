@@ -4,7 +4,7 @@ class RoomList extends React.Component
 {
     render(){
         return(
-            <div className="room-list">
+            <div className="rooms-list">
                 <div className="help-text">RoomList</div>
             </div>
         )
