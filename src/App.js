@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import MessageList from './components/MessageList'
+import SendMessageForm from './components/SendMessageForm'
+import RoomList from './components/RoomList'
+import NewRoomForm from './components/NewRoomForm'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+
+  render(){
+    return(
+      <div className="app">
+          <RoomList />
+          <MessageList />
+          <SendMessageForm />
+          <NewRoomForm />
+      </div>
+    )
+  }
 }
 
 export default App;
